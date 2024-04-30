@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Chhavi Shah</div>
+        <div>
+            <ul class="nav-links">
+<!--                <li><a href="#about">About</a></li>-->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#extracurriculars">Extracurriculars</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Chhavi Shah</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+<!--                <li><a href="#about" onclick="toggleMenu()">About</a></li>-->
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#extracurriculars" onclick="toggleMenu()">Extracurriculars</a></li>
+            </div>
+        </div>
+
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container"><img src="./assets/photo.jpg" alt="Chhavi picture"></div>
+        <div class="section__text">
+            <div class="inline">
+                <h1 class="title">Hello I'm Chhavi!</h1>
+<!--                <h1 class="title">Chhavi Shah</h1>-->
+            </div>
+            <p class="section__text__p2">Software Engineer. Security Enthusiast.</p>
+<!--            <div class="btn-container">-->
+<!--                <button class="btn btn-color-2" onclick="window.open('./assets/')"></button>-->
+<!--            </div>-->
+<!--            <div class="btn-container">-->
+<!--                <button class="btn btn-color-2" onclick="location.href='./#contact' "></button>-->
+<!--            </div>-->
+            <p class="section__text__p1">I'm an undergraduate Computer Science student at the University of Toronto, graduating in December 2024.
+                I'm interested in secure software development - you'll regularly catch me chatting with a security professional or reading about
+                security vulnerabilities! I'm interning as a software developer at Citi and have interned at Bell as a SOC level 3 analyst.
+            </p>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/chhavi-shah/'">
+                <img src="./assets/github.png" alt="GitHub profile" class="icon" onclick="location.href='https://github.com/ConverseScholar'">
+                <img src="./assets/devpost.png" alt="Devpost profile" class="icon" onclick="location.href='https://devpost.com/chhavi-shah'">
+                <img src="./assets/email.png" alt="email" class="icon" onclick="window.open('mailto:chhavi7.shah@gmail.com')">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/sagewell.png" alt="SageWell" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">SageWell</h2>
+                <p class="section__text__p1">SageWell helps the elderly access medical information using their voices, with support from LLMs.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://devpost.com/software/sagewell'">
+                    Devpost
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ConverseScholar/SageWell'">
+                    GitHub
+                    </button>
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/nesthub.png" alt="NestHub" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">NestHub</h2>
+                <p class="section__text__p1">NestHub serves as a comprehensive hub connecting immigrants with essentials services. </p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://devpost.com/software/nesthub'">
+                        Devpost
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ConverseScholar/NestHub'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+
+            </div>
+            <div class="about-containers">
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/ai-sign.jpeg" alt="Ai Sign" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Ai Sign</h2>
+                    <p class="section__text__p1">Ai Sign utilizes computer vision, translating ASL hand movements captured by a webcam into English text,
+                        bridging communication between many.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devpost.com/software/ai-sign'">
+                            Devpost
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ConverseScholar/Ai-Sign'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/heartattech.png" alt="Heart AtTech" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Heart AtTech</h2>
+                    <p class="section__text__p1">Heart AtTech decreases CPR response time by 80% by connecting those
+                        needing aid to trained volunteers.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devpost.com/software/heart-attech'">
+                            Devpost
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ConverseScholar/Heart-AtTech'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Industry Experience</h1>
+        <div class="timeline">
+            <div class="timeline__component">
+                <div class="timeline__date timeline__date--right">May 2024 - Aug 2024</div>
+            </div>
+            <div class="timeline__middle">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg">
+                <h2 class="timeline__title">Software Engineering Intern</h2>
+                <p class="timeline__paragraph">Citi</p>
+            </div>
+            <div class="timeline__component timeline__component--bg">
+                <h2 class="timeline__title">SOC Level 3 Analyst Intern</h2>
+                <p class="timeline__paragraph">Bell</p>
+            </div>
+            <div class="timeline__middle">
+                <div class="timeline__point"></div>
+                <div class="timeline__point timeline__point--bottom"></div>
+            </div>
+            <div class="timeline__component--bottom">
+                <div class="timeline__date--left">May 2023 - Aug 2023</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="extracurriculars">
+        <p class="section__text__p1">Delve Into My</p>
+        <h1 class="title">Extracurriculars</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="extras-container">
+                    <div class="article-container">
+                        <img src="./assets/curious_campus.png" alt="Curious Campus" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Curious Campus</h2>
+                    <p class="section__text__p1">SageWell helps the elderly access medical information using their voices, with support from LLMs.</p>
+                    <div class="btn-container">
+<!--                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devpost.com/software/sagewell'">-->
+<!--                            Devpost-->
+<!--                        </button>-->
+                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+                            Website
+                        </button>
+                    </div>
+                </div>
+
+                <div class="extras-container">
+                    <div class="article-container">
+                        <img src="./assets/wicys.png" alt="wicys" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">WiCyS Conference 2024</h2>
+                    <p class="section__text__p1">NestHub serves as a comprehensive hub connecting immigrants with essentials services. </p>
+                    <div class="btn-container">
+<!--                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devpost.com/software/nesthub'">-->
+<!--                            Devpost-->
+<!--                        </button>-->
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/posts/chhavi-shah_wicys2024-activity-7187533847499010048-AO6u?utm_source=share&utm_medium=member_desktop'">
+                            LinkedIn Post
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+    <footer>
+        <p>Copyright &#169; 2024 Chhavi Shah. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
