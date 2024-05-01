@@ -47,7 +47,7 @@
 @media screen and (max-width: 600px) {
     #profile {
         height: 83vh;
-        margin-bottom: 0;
+        margin-bottom: 8rem;
     }
     article {
         font-size: 1rem;
