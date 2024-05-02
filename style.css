@@ -278,7 +278,7 @@ section {
     text-align: center;
 }
 
-#socials-container {
+.socials-container {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
@@ -447,11 +447,18 @@ section {
 /* FOOTER */
 
 footer {
-    height: 5vh;
+    height: 10vh;
     margin: 1rem;
 }
 
 footer p {
+    margin-top: 1rem;
     text-align: center;
+}
+
+.icon-footer {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
